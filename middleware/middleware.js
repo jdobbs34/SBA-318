@@ -8,6 +8,4 @@ export function logger(req, res, next) {
   next();
 }
 
-export function globalErr(err, req, res, next) {
-  res.status(err.status || 500).json({ error: "Something went wrong" });
-}
+

@@ -1,6 +1,8 @@
 // Imports
 import express from "express";
-import {logger, globalErr} from "./middleware/middleware.js";
+import recipelist from  "./routes/recipelist.js"
+import {logger} from "./middleware/middleware.js";
+import {globalErr} from "./middleware/globalerr.js"
 
 // Setups
 const app = express();
@@ -11,9 +13,7 @@ app.use(express.json());
 app.use(logger);
 
 // Routes
-app.get("/", (req, res) => {
-  res.send("Aloha");
-});
+app.use('/api/recipes', recipelist)
 
 // Global Err handling middleware
 app.use(globalErr);
