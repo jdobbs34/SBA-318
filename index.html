@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Manager</title>
+    <link rel="stylesheet" href="./styles.css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Recipe Manager</h1>
+
+      <div class="nav">
+        <a href="/">Home</a>
+        <a href="/recipes">All recipes</a>
+      </div>
+
+     <h2>Weclcome to Recipe Manager</h2> 
+     <p>Browse and manage your favorite recipes</p>
+
+     <h2>Add New Recipe</h2>
+      <form action="api/recipes" method="POST">
+        <div class="form-group">
+          <label for="name">Recipe Name:</label>
+          <input type="text" id="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="for instructions">Instruction:</label>
+          <textarea name="instructions" id="instructions" required></textarea>
+        </div>
+
+        <button type="submit">Add Recipes</button>
+      </form>
+     
+     <h2>Categories</h2>
+     <div class="recipe-card">
+      <h3>category.name</h3>
+      <p>Category ID:category.name</p>
+     </div>
+     <h2>Quick Stats</h2>
+     
+    </div>
+  </body>
+</html>
