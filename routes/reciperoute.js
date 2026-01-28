@@ -29,23 +29,25 @@ router
       };
 
       db.push(newRecipe);
+      res.redirect("/home")
     } else {
       res.status(400).json({ error: "Insufficient Data" });
     }
   })
   // Read
   .get((req, res) => {
-    res.json({ db });
+    res.json(db);
   });
 
 // Update
-router.route("/:id").put((req, res) => {
+router.route("/:id")
+.put((req, res) => {
   let id = req.params.id;
 
-  let updatedRecipe = db.find((recipe, i) => {
+  let updatedRecipe = db.find((recipe) => {
     if (recipe.id == id) {
       for (let key in req.body) {
-        db[i][key] = req.body[key];
+        db[key] = req.body[key];
       }
 
       return true;

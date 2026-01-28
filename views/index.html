@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipe Manager</title>
-    <link rel="stylesheet" href="../styles.css/styles.css">
+    <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
     <header>
      <h1>Recipe Manager</h1>
      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam aspernatur veritatis beatae impedit vel. Repellat non qui delectus modi dolor numquam repellendus ducimus provident, voluptates quae ipsam ut veniam excepturi.</p>
     </header>
-    <form action="api/recipes" method="POST">
-      
 
+
+    <form action="api/recipes" method="POST">
+        <h2>Create your recipe here</h2>
         <input type="text" name="recipe" id="recipe" placeholder="Enter recipe here..." />
         <label>Category</label>
         <select name="category" id="category">
@@ -23,11 +24,47 @@
           <label>Ingrediants</label>
           <input name="ingrediants" id="ingrediants" placeholder="Enter ingrediants here..." />
           <label>Insructions</label>
-          <input name="instructions" id="instructions" placeholder="Enter ingrediants here..." />
-          <input type="submit" value="Submit">
-          
+          <input name="instructions" id="instructions" placeholder="Enter instructions here..." />
+          <input type="submit" value="Submit">  
         </select>
-      
+    </form>
+    
+     <form action="api/recipes" method="GET">
+      <h2>Read your recipe here</h2>
+        <input type="text" name="recipe" id="recipe" placeholder="Enter recipe here..." />
+        <label>Category</label>
+        <select name="category" id="category">
+          <option value="breakfast">Breakfast</option>
+          <option value="lunch">Lunch</option>
+          <option value="dinner">Dinner</option>
+        </select>
+    </form>
+
+      <form action="api/recipes" method="PUT">
+        <h2>Update your recipe here</h2>
+        <input type="text" name="recipe" id="recipe" placeholder="Enter recipe here..." />
+        <label>Category</label>
+        <select name="category" id="category">
+          <option value="breakfast">Breakfast</option>
+          <option value="lunch">Lunch</option>
+          <option value="dinner">Dinner</option>
+          <label>Ingrediants</label>
+          <input name="ingrediants" id="ingrediants" placeholder="Enter ingrediants here..." />
+          <label>Insructions</label>
+          <input name="instructions" id="instructions" placeholder="Enter instructions here..." />
+          <input type="submit" value="Submit">  
+        </select>
+    </form>
+
+      <form action="api/recipes" method="DELETE">
+        <h2>Delete your recipe here</h2>
+        <input type="text" name="recipe" id="recipe" placeholder="Enter recipe here..." />
+        <label>Category</label>
+        <select name="category" id="category">
+          <option value="breakfast">Breakfast</option>
+          <option value="lunch">Lunch</option>
+          <option value="dinner">Dinner</option>
+        </select>
     </form>
 
       
