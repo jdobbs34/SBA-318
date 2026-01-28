@@ -2,7 +2,7 @@ export default [
 {
   id: 1,
   name: "Pancakes",
-  categoryId: 1,
+  category: "Breakfast",
   Ingredients: ["flour", "eggs", "milk", "sugar"],
   instructions: "Mix ingredients and cook on griddle",
 },
@@ -10,7 +10,7 @@ export default [
 {
   id: 2,
   name: "Grilled Cheese",
-  categoryId: 2,
+  categoryId: "Lunch",
   Ingredients: ["bread", "cheese", "butter"],
   instructions: "Butter bread, add cheese, grill until golden",
 },
@@ -18,7 +18,7 @@ export default [
 {
   id: 3,
   name: "Spaghetti",
-  categoryId: 3,
+  categoryId: "Dinner",
   Ingredients: ["pasta", "tomato sauce", "ground beef"],
   instructions: "Cook pasta, prepare sauce, combine",
 }

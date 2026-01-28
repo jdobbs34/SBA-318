@@ -23,7 +23,7 @@ router
       let newRecipe = {
         id: id,
         name,
-        categoryId,
+        category,
         Ingredients,
         instructions,
       };
@@ -77,10 +77,10 @@ router.route("/").delete((req, res) => {
 });
 
 // Filter
-router.route("/:cat/categoryId").get((req, res) => {
-  let categoryId = req.params.cat;
+router.route("/:cat/category").get((req, res) => {
+  let category = req.params.cat;
 
-  let filteredData = db.filter((recipe) => recipe.categoryId == categoryId);
+  let filteredData = db.filter((recipe) => recipe.category == category);
 
   res.json({ filteredData });
 });
