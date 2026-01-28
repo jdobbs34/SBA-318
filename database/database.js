@@ -19,7 +19,7 @@ export default [
   id: 3,
   name: "Spaghetti",
   category: "Dinner",
-  Ingredients: ["pasta", "tomato sauce", "ground beef"],
+  Ingredients: "pasta, tomato sauce, ground beef",
   instructions: "Cook pasta, prepare sauce, combine",
 }
 

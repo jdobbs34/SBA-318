@@ -4,18 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipe Manager</title>
-    <link rel="stylesheet" href="./styles.css/styles.css">
+    <link rel="stylesheet" href="../styles.css/styles.css">
   </head>
   <body>
-   <form action="api/recipes" method="POST">
-    <input type="text" name="recipe" id="recipe" placeholder="Enter recipe here..." />
-    <select name="category" id="category">
-      <option value="breakfast">Breakfast</option>
-      <option value="lunch">Lunch</option>
-      <option value="dinner">Dinner</option>
-      <input type="submit" value="Submit">
-    </select>
-   </form>
+    <header>
+     <h1>Recipe Manager</h1>
+     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam aspernatur veritatis beatae impedit vel. Repellat non qui delectus modi dolor numquam repellendus ducimus provident, voluptates quae ipsam ut veniam excepturi.</p>
+    </header>
+    <form action="api/recipes" method="POST">
+      
+
+        <input type="text" name="recipe" id="recipe" placeholder="Enter recipe here..." />
+        <label>Category</label>
+        <select name="category" id="category">
+          <option value="breakfast">Breakfast</option>
+          <option value="lunch">Lunch</option>
+          <option value="dinner">Dinner</option>
+          <label>Ingrediants</label>
+          <input name="ingrediants" id="ingrediants" placeholder="Enter ingrediants here..." />
+          <label>Insructions</label>
+          <input name="instructions" id="instructions" placeholder="Enter ingrediants here..." />
+          <input type="submit" value="Submit">
+          
+        </select>
+      
+    </form>
 
       
     </div>

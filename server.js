@@ -1,6 +1,6 @@
 // Imports
 import express from "express";
-import recipeList from "./routes/recipelist.js";
+import recipeList from "./routes/reciperoute.js";
 import { logger } from "./middleware/middleware.js";
 import { globalErr } from "./middleware/globalerr.js";
 
